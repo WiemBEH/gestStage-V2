@@ -1,0 +1,62 @@
+/******************************
+	BEN EL HADJ Wiem
+	group 14
+******************************/
+
+
+body { 
+	background-image: url("fond-gris.jpg");
+ 	font-family: Georgia;
+	color: white;
+	font-size: 10pt;
+}
+ 
+h1 {
+	text-align: center;
+}
+
+#sanspuce li {
+	list-style-type: none;
+}
+
+#coordonnees {
+	width: 28%;
+	float : left;
+}
+
+#table {
+	margin-top: 10%;
+	width: 40%;
+	margin: 0%;
+	float : left;
+	outline-style: ridge;
+	outline-width: 10px;
+}
+
+#photo {
+	width: 20%;
+	float : right;	
+}
+
+#messageIndice {
+	font-size: 12pt;
+	font-weight: bold;
+}
+
+tr th {
+	background-color: gray;
+	text-align:left;
+	font-weight: bold;
+}
+
+col {
+	width:700px; 
+}
+
+table {
+    border-collapse: collapse;
+}
+
+td, th {
+    border: 1px solid white;
+}

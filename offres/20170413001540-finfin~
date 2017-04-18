@@ -1,0 +1,28 @@
+Today I want to talk about movement detector fo Wii, this is my plan:
+	1-introduction
+	2-the sensor bar
+	3-accelerometers for the Wiimote
+	4-conclusion
+
+1-INTRODUCTION:
+The Wii has wireless controllers called WIIMOTE.
+The Wiimote have gyroscope technology. Gyroscope technology is a fancy name for motion sensor technology. There has never been a video game console that has used motion-sensor technology.
+For apply this technology, the Wii needs the Wiimote and the sensor bar that placed on or under the screen.
+The Wii communicates with the sensor bar by electric file and with the Wiimote by Bleutooth.
+The Wiimote communicate with the sensor bar by infraRed.
+
+
+partie 2:
+the sensor bar has five LED lights on each side that can track motion from the controller. 
+The spacing between the LED’s allows the remote to calculate its distance from the bar. This allows the player to stab at an enemy with a sword for example. The game-play is very realistic in this aspect.
+
+partie 3:
+As you can see inside the Wii controller, there is a small device called an accelerometer.
+
+This device allows the Wii remote to contact the sensor bar, and relate motion on the screen. Whenever a player accelerates the controller one way, the piece of silicon bends the opposite direction, which causes it to come closer to the capacitors. The capacitors (depending on where the silicon is), change the electric field. The change in the electric field causes motion on the screen.
+
+
+
+
+example:
+The player swings the controller as if they were swinging a tennis racket. This is an example of how the accelerometers work. For example, if the person is swinging the racket to the right, the Wii’s intuitive response would be to send the ball to the right of the screen. This is due to the acceleration of the silicon inside the tiny chip inside the remote. This controller is able to sense all three dimensional motion.
