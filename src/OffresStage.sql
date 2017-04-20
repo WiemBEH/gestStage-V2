@@ -57,6 +57,7 @@ CREATE TABLE candidature (
 );
 
 INSERT INTO utilisateur (mail, mot_de_passe, droit) VALUES ('aliabir_35@hotmail.com', '18011990', 'Entreprise');
+INSERT INTO utilisateur (mail, mot_de_passe, droit) VALUES ('ghada@java.com', '18011990', 'Administrateur');
 /*
 INSERT INTO offre_stage (entreprise, domaine, libelle, date_debu, duree, chemin_stockage, description)
 VALUES ()

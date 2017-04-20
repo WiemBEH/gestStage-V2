@@ -1,4 +1,5 @@
 import javax.swing.*;
+
 import java.awt.*;
 import java.awt.event.*;
 import java.sql.Date;
@@ -43,7 +44,12 @@ public class Connexion extends JFrame implements ActionListener{
 		  else if (ae.getActionCommand().equals("inscription"))
 			  inscrire();
 	  }
-	  void inscrire (){}
+	  void inscrire (){
+			JFrame f = new JFrame ();
+			f.add(new AjoutUtilisateur());
+			f.setVisible(true);
+			f.setSize(500,500);
+	  }
 	  void connecter (){
 			try {
 				String identifiant = identifiant_field.getText();
@@ -67,10 +73,12 @@ public class Connexion extends JFrame implements ActionListener{
 							System.out.println("Entreprise");
 						}
 						else if (droit.equals("Etudiant")) {
+							PageSuivante = new Etudiant(identifiant, nom, telephone);
 							System.out.println("Etudiant");
 						}
 							
 						else if (droit.equals("Administrateur")) {
+							PageSuivante = new Admin();
 							System.out.println("Administrateur");
 						}
 						PageSuivante.setSize(500,500);

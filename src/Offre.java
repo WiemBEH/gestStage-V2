@@ -88,6 +88,7 @@ public class Offre extends JFrame implements ActionListener {
 		  gbc.gridy = 0;	
 		  gbc.gridwidth = 2;
 		  panel.add(retour_button, gbc);
+		  retour_button.hide();
 		  gbc.gridwidth = 1;
 		  gbc.gridy = 1;		  
 		  panel.add(new JLabel("Domaine de l'offre "), gbc);

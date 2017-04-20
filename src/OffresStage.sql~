@@ -38,7 +38,6 @@ CREATE TABLE offre_stage (
 	duree INT,
 	chemin_stockage VARCHAR(255),
 	descriptif VARCHAR(510),
-	valide BOOL DEFAULT TRUE,
 	FOREIGN KEY (entreprise) REFERENCES utilisateur(mail),
 	FOREIGN KEY (domaine) REFERENCES domaine(domaine),
 	PRIMARY KEY (id)
