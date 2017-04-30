@@ -18,14 +18,14 @@ public class Candidat  extends JPanel implements ActionListener {
 	String chamein_cv;
 	String mail_etudiant;
 	String motivation_etudiant;
-	boolean remarque;
+	Boolean remarque;
 	int offre;
 	
 	JButton cv_button, accepter_button, refuser_button;
 	JLabel  mail_etudiant_label, remarque_label, motivation_label;
 	
 	
-	public Candidat(int offre,String chamein_cv,String mail_etudiant,String motivation_etudiant,boolean remarque) {
+	public Candidat(int offre,String chamein_cv,String mail_etudiant,String motivation_etudiant,Boolean remarque) {
 		System.out.println("+++++++++++++++++++1");
 		this.offre = offre;
 		this.chamein_cv = chamein_cv;
@@ -43,7 +43,9 @@ public class Candidat  extends JPanel implements ActionListener {
 		mail_etudiant_label = new JLabel("Mail : \n :"+mail_etudiant);
 		System.out.println("+++++++++++++++++++3");
 		remarque_label = new JLabel();
-		if (remarque)
+		if (remarque == null)
+			remarque_label.setText("Candidature en attente");
+		else if (remarque)
 			remarque_label.setText("Candidature acceptée");
 		else
 			remarque_label.setText("Candidature refusée");

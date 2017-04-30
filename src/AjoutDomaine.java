@@ -48,7 +48,7 @@ public class AjoutDomaine extends JPanel  implements ActionListener {
 			try {
 				Application.statement_base.executeUpdate(req);
 			} catch (SQLException e1) {
-				JOptionPane.showMessageDialog(this,"Impossible d'ajouter ce domaine", "Erreur",JOptionPane.ERROR_MESSAGE);
+				JOptionPane.showMessageDialog(this,"Impossible d'ajouter ce domaine", "Erreur",JOptionPane.INFORMATION_MESSAGE);
 				e1.printStackTrace();
 			}
 			JOptionPane.showMessageDialog(this,"Domaine ajouté ", "Erreur",JOptionPane.ERROR_MESSAGE);

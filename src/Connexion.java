@@ -36,12 +36,13 @@ public class Connexion extends JFrame implements ActionListener{
 		  setTitle("Page de connexion");
 		  setSize(300,100);
 		  setVisible(true);
+		  this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 	  }
 	  
 	  public void actionPerformed(ActionEvent ae) {
-		  if (ae.getActionCommand().equals("connexion"))
+		  if (ae.getSource() == connexion_button) // 
 			  connecter();
-		  else if (ae.getActionCommand().equals("inscription"))
+		  else if (ae.getSource() == inscription_button)
 			  inscrire();
 	  }
 	  void inscrire (){
@@ -49,6 +50,7 @@ public class Connexion extends JFrame implements ActionListener{
 			f.add(new AjoutUtilisateur());
 			f.setVisible(true);
 			f.setSize(500,500);
+			f.setTitle("Inscription");
 	  }
 	  void connecter (){
 			try {

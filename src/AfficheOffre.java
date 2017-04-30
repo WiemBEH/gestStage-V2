@@ -30,6 +30,7 @@ public class AfficheOffre extends JPanel implements ActionListener {
 	String descriptif;
 	String etudiant;
 	String id;
+	
 	JButton detail_button, postule_button;
 	
 	JLabel reponse_label;

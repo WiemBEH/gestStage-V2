@@ -93,7 +93,7 @@ public class Entreprise extends Utilisateur {
 								Application.result_base.getString("descriptif"), 
 								this.getMail(),
 								Application.result_base.getString("id")), gbc);
-								++gbc.gridy;
+								++gbc.gridy; 
 								
 						}
 						//remove(JCdomaines);

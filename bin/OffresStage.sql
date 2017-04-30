@@ -38,7 +38,6 @@ CREATE TABLE offre_stage (
 	duree INT,
 	chemin_stockage VARCHAR(255),
 	descriptif VARCHAR(510),
-	valide BOOL DEFAULT TRUE,
 	FOREIGN KEY (entreprise) REFERENCES utilisateur(mail),
 	FOREIGN KEY (domaine) REFERENCES domaine(domaine),
 	PRIMARY KEY (id)
@@ -58,6 +57,7 @@ CREATE TABLE candidature (
 );
 
 INSERT INTO utilisateur (mail, mot_de_passe, droit) VALUES ('aliabir_35@hotmail.com', '18011990', 'Entreprise');
+INSERT INTO utilisateur (mail, mot_de_passe, droit) VALUES ('ghada@java.com', '18011990', 'Administrateur');
 /*
 INSERT INTO offre_stage (entreprise, domaine, libelle, date_debu, duree, chemin_stockage, description)
 VALUES ()

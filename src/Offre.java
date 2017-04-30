@@ -150,11 +150,11 @@ public class Offre extends JFrame implements ActionListener {
 				JOptionPane.showMessageDialog(this,"La description de l'offre est obligatoire", "Erreur",JOptionPane.ERROR_MESSAGE);
 			else {
 				System.out.println("INSERT INTO offre_stage (entreprise, domaine, libelle, date_debut, duree, chemin_stockage, descriptif) "
-						+"VALUES ('"+mail_entreprise+"','"+domaines.getSelectedItem()+"','"+libelle_field.getText()+"',"+datePicker.getJFormattedTextField().getText()+","+duree_field.getText()+",'"+PJ.nom_fichier+"','"+description_field.getText()+"')");
+						+"VALUES ('"+mail_entreprise+"','"+domaines.getSelectedItem()+"','"+libelle_field.getText()+"','"+datePicker.getJFormattedTextField().getText()+"','"+duree_field.getText()+"','"+PJ.nom_fichier+"','"+description_field.getText()+"')");
 				
 				try {
 					String req = "INSERT INTO offre_stage (entreprise, domaine, libelle, date_debut, duree, chemin_stockage, descriptif) "
-							+"VALUES ('"+mail_entreprise+"','"+domaines.getSelectedItem()+"','"+libelle_field.getText()+"','"+datePicker.getJFormattedTextField().getText()+"',"+duree_field.getText()+",'"+PJ.nom_fichier+"','"+description_field.getText()+"')";
+							+"VALUES ('"+mail_entreprise+"','"+domaines.getSelectedItem()+"','"+libelle_field.getText()+"','"+ datePicker.getJFormattedTextField().getText()+"','"+duree_field.getText()+"','"+PJ.nom_fichier+"','"+description_field.getText()+"')";
 					Application.statement_base.executeUpdate(req);
 					JOptionPane.showMessageDialog(this,"Offre sauvegardée", "",JOptionPane.INFORMATION_MESSAGE);
 					this.setVisible(false);

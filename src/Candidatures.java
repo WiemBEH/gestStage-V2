@@ -35,7 +35,14 @@ public class Candidatures extends JFrame implements ActionListener{
 			ResultSet re = st.executeQuery(req);
 			while (re.next()){
 				System.out.println("+++++++++++++++++++");
-				scrol.add(new Candidat (re.getInt("offre"), re.getString("chemin_cv"), re.getString("etudiant"), re.getString("motivation"), re.getBoolean("reponse")));
+				Boolean reponse;
+				if (re.getBoolean("reponse") == true)
+					reponse = true;
+				else if (re.wasNull())
+					reponse = null;
+				else 
+					reponse = false;
+				scrol.add(new Candidat (re.getInt("offre"), re.getString("chemin_cv"), re.getString("etudiant"), re.getString("motivation"), reponse));
 			}		
 		} catch (SQLException e1) {
 			e1.printStackTrace();

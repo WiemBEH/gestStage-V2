@@ -58,7 +58,7 @@ public class SuppressionDomaine extends JPanel  implements ActionListener {
 					JOptionPane.showMessageDialog(this,"Impossible de supprimer ce domaine", "Erreur",JOptionPane.ERROR_MESSAGE);
 					e1.printStackTrace();
 				}
-				JOptionPane.showMessageDialog(this,"Domaine supprimé ", "Erreur",JOptionPane.ERROR_MESSAGE);
+				JOptionPane.showMessageDialog(this,"Domaine supprimé ", "Erreur",JOptionPane.INFORMATION_MESSAGE);
 				//la requete 
 				remove(suppButtons.get(i));
 				remove(suppJLabel.get(i));
